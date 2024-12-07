@@ -3,7 +3,7 @@ import math
 
 def determine_temperature_most_close_to_0(tested_t : int) -> int:
     if n == 0 : return 0 # If there is no temperture given -> return 0
-    return tested_t if abs(tested_t) < abs(t_more_close) else t_more_close
+    return tested_t if abs(tested_t) < abs(t_more_close) else abs(t_more_close)
 
 t_more_close = 10000
 n = int(input())  # the number of temperatures to analyse
