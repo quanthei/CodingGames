@@ -6,8 +6,7 @@ def determine_temperature_most_close_to_0(tested_t : int) -> int:
         return tested_t 
     elif tested_t *-1 == t_more_close: 
         return abs(tested_t)
-    else:
-        return t_more_close
+    return t_more_close
     
 n = int(input())  # the number of temperatures to analyse
 if n == 0 : 
