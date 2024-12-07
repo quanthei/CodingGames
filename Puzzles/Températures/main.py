@@ -2,10 +2,10 @@ import sys
 import math
 
 def determine_temperature_most_close_to_0(tested_t : int) -> int:
-    if tested_t *-1 == t_more_close: 
-        return abs(tested_t)
-    elif abs(tested_t) < abs(t_more_close):
+    if abs(tested_t) < abs(t_more_close):
         return tested_t 
+    elif tested_t *-1 == t_more_close: 
+        return abs(tested_t)
     else:
         return t_more_close
     
